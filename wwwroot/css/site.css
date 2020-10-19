@@ -1,0 +1,211 @@
+﻿a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+}
+
+/* Provide sufficient contrast against white background */
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    background-color: #100E17;
+    padding-top:100px;
+
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Additional CSS*/
+
+.container-fluid {
+    padding-bottom: 70px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0px;
+}
+
+.bg-1 {
+    background-color: #100E17; 
+    max-width: 1080px;
+    padding-bottom: 5em;
+    padding-top: 7em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #171325;
+}
+
+section{
+}
+
+h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bg-sub-1 {
+
+}
+
+.bg-sub-2{
+    
+}
+
+.masthead-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+h3 {
+}
+
+.img-circle {
+    border: 5px;
+    border-style:double;
+    border-color: #343a40;
+    margin-bottom:15px;
+}
+
+.crl {
+    height: 450px;
+    background-color: #e9ecef;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('https://apufpel.com.br/assets/img/seta_prim.png')
+}
+
+.carousel-control-next-icon {
+    background-image: url('https://apufpel.com.br/assets/img/seta_ult.png')
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 48px;
+    height: 4px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    background-color: #474e5d;
+}
+
+.carousel-indicators .active {
+    width: 48px;
+    height: 4px;
+    margin: 10px;
+    background-color: #ffff99;
+}
+
+
+.navbar {
+    min-height:70px;
+    background-color: #100E17;
+}
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background: #1abc9c;
+}
+
+.img-thumbnail {
+    min-height: 300px;
+    min-width: 300px;
+    background-color: #0dbda1;
+    border-color: #0dbda1;
+    margin-top:3em;
+    margin-bottom: 2em;
+}
+
+.progress-bar{
+    background-color: #0dbda1;
+}
+
+
+.btn-primary {
+    background-color: #0dbda1;
+    border-color: #0dbda1;
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+        background-color: #097c69;
+        border-color: #097c69;
+    }
+
+.theme_color {
+    color: #0dbda1;
+}
+
+a.active {
+    border-bottom: 3px solid #0dbda1;
+}
+
+.dark-bg {
+    background-color:#202026;
+}
+
+.page-item.active .page-link {
+    background-color: #0dbda1;
+    border-color: #0dbda1;
+}
+
+.card-img-top {
+    height: 50%;
+    border: 1px;
+    border-style: solid;
+    border-color: lightslategrey;
+}
+
+.card{
+    padding-bottom: 30px;
+}

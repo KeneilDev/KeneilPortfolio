@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/JSGame/JSGame_Layout.cshtml";
+}
+
+
+    <div class="gamecontainer container-fluid justify-content-center border-bottom-0">
+
+        <h1 class="p-5">Keneil's HTML5 JavaScript Game</h1>
+
+    </div>
+<section id="canvascontent">
+    <div class="gamecontainer shadow-sm container-fluid text-white justify-content-center">
+        <div id="game-over-overlay">
+        </div>
+        <div id="game-over">
+            <h2>
+                GAME OVER
+            </h2>
+            <button id="play-again">Play Again</button>
+        </div>
+
+        <div id="game-complete-overlay">
+        </div>
+
+        <div id="game-complete">
+            <h2>
+                CONGRATULATIONS YOU WON!!!
+            </h2>
+            <button id="play-again-2">Play Again</button>
+        </div>
+        <canvas id="gameCanvas" width="560" height="450"></canvas>
+    </div>
+</section>
+    <div class="gamecontainer shadow-sm container-fluid justify-content-center">
+        <div class="wrapper">
+            <h3>How to Play:</h3>
+            <p2>Use Up Down Left and Right Keys To move the player.</p2>
+
+            <h3>Objective:</h3>
+            <p2>
+                Collect All keys on each level to unlock doors and
+            </p2>
+            <p2> proceed to the next level to find the golden chest!</p2>
+
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Effects</th>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+                            <img src="~/JsGameFiles/images/key_silver.png" alt=Key max-height="32" max-width="32">
+                            <a>Key</a>
+                        </span>
+                    </td>
+                    <td>Unlocks doors </td>
+                </tr>
+                <tr>
+                    <td> 
+                    <span>
+                      <img src="~/JsGameFiles/images/potion_yellow.png" alt=Potion max-height="32" max-width="32">
+                        <a>Potion</a>
+                    </span>
+                    <td>makes the player invincible for 7 seconds </td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </div>
+    </div>
