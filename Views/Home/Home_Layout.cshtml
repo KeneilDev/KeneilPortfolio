@@ -6,8 +6,8 @@
     <title>@ViewData["Title"] - Keneil's CV</title>
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="~/css/site.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
 
 </head>
 <body>
@@ -35,7 +35,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" data-toggle="dropdown" role="button" asp-area="" asp-controller="Home" asp-action="Index"aria-haspopup="true">Projects</a>
+                        <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" data-toggle="dropdown" role="button" asp-area="" asp-controller="Home" asp-action="Index" aria-haspopup="true">Projects</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" asp-area="" asp-controller="JSGame" asp-action="Game">JS Game</a>
                             <a class="dropdown-item" asp-area="" asp-controller="Books" asp-action="Books">Booklist App</a>
@@ -57,13 +57,15 @@
 
     <footer class="border-top border-dark footer text-white">
         <div class="container">
-            <a>&copy; 2020 - Keneil's CV - Made by Myself using .NET MVC </a>
+            <a>&copy; 2020 - Keneil_Dev - Developed and Designed Using .NET </a>
         </div>
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/waypoints/jquery.waypoints.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

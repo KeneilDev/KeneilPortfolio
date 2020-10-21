@@ -1,9 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
+
 @{
     Layout = "~/Views/Home/Home_Layout.cshtml";
+    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+    @model KeneilPortfolio.Models.ContactForm
 }
+
 <div class="bg-1 shadow-sm container-fluid text-white justify-content-center" id="main-head">
     <div class="row align-items-center mw-100">
         <div class="col mh-100">
@@ -52,7 +56,7 @@
 <section id="about-me">
     <div class="bg-1 shadow-sm container-fluid text-white justify-content-center">
         <h2><span class="fa fa-user-circle fa-fw theme_color"></span> About Me</h2>
-        <p> I'm a recent computing graduate with commercial experience working in software development. I have gained 1 year of work experience under a commercial company as an apprentice during my gap year with exposure to a full agile software development cycle as a member of a team. This includes working on the front and backend of the web systems, conducting tasks such as integrating UI designs, testing and publishing to the live systems mainly using C#/ASP.NET, HTML, CSS, SQL and Umbraco.  I am actively looking to learn and gain professional experience in software development while embracing the challenges ahead of me in future projects and endeavours. While I'm on the job hunt I'm working on personal projects such as developing this website and polishing my skills in development as it's a hobby to me just as a career choice.</p>
+        <p> I'm a recent computing graduate with commercial experience working in software development. I have gained 1 year of work experience under a commercial company as an apprentice during my gap year. I've been exposed me to a full agile software development cycle as a member of a small development team. This includes working on the front and backend of the web systems, conducting tasks such as integrating UI designs, testing and publishing to the live systems mainly using C#/.NET, HTML, CSS, SQL and Umbraco.  I am actively looking to learn and gain professional experience in software development while embracing the challenges ahead of me in future projects and endeavours. While I'm seeking a new role I'm working on personal projects such as developing this website and polishing my skills in development as it's a hobby to me just as much as a career choice.</p>
     </div>
 </section>
 
@@ -62,11 +66,11 @@
 
         <h5>C#</h5>
         <div class="progress md-progress" style="height: 20px">
-            <div class="progress-bar" role="progressbar" data-score="55%" height: 20px" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+            <div class="progress-bar" role="progressbar" data-score="65%" height: 20px" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">55%</div>
         </div>
         <h5>.NET CORE / MVC</h5>
         <div class="progress md-progress" style="height: 20px">
-            <div class="progress-bar" role="progressbar" data-score="55%" height: 20px" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+            <div class="progress-bar" role="progressbar" data-score="60%" height: 20px" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">55%</div>
         </div>
         <h5>JavaScript</h5>
         <div class="progress md-progress" style="height: 20px">
@@ -78,7 +82,7 @@
         </div>
         <h5>HTML5 and CSS</h5>
         <div class="progress md-progress" style="height: 20px">
-            <div class="progress-bar" role="progressbar" data-score="75%" height: 20px" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            <div class="progress-bar" role="progressbar" data-score="80%" height: 20px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">75%</div>
         </div>
     </div>
 </section>
@@ -215,7 +219,7 @@
                 <div class="row">
                     <div class="col">Software Testing</div>
                     <div class="w-100"></div>
-                    <div class="col">Wesite Software</div>
+                    <div class="col">Website Software</div>
                     <div class="w-100"></div>
                     <div class="col">Web Development</div>
                     <div class="w-100"></div>
@@ -243,7 +247,7 @@
                     <div class="w-100"></div>
                     <div class="col">Database Design</div>
                     <div class="w-100"></div>
-                    <div class="col">Procedual Programming</div>
+                    <div class="col">Procedural Programming</div>
                     <div class="w-100"></div>
                     <div class="col">Web Server Scripting</div>
                 </div>
@@ -267,13 +271,11 @@
                 <img class="card-img-top" src="~/images/jsgame.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><a class="theme_color" asp-area="" asp-controller="JSgame" asp-action="Game">Vanilla JS Game</a></h5>
-                    <p class="card-text">This Pure JS dungeon game which was originally assigned as my dissertation project and is coded purely in JavaScript, it utilises object orientated programming with many functions and is tile based.</p>
-                    <p class="theme_color">Skills used:</p>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                    </ul>
+                    <div class="card-text">
+                        <p>This Pure JS dungeon game which was originally assigned as my dissertation project and is coded purely in JavaScript, it utilises object orientated programming with many functions and is tile based.</p>
+                        <p class="theme_color">Skills used:</p>
+                        <p>JavaScript, CSS, HTML</p>
+                    </div>
                 </div>
             </div>
             <div class="card dark-bg shadow">
@@ -282,15 +284,7 @@
                     <h5 class="card-title"> <a class="theme_color" asp-area="" asp-controller="Books" asp-action="Books">Booklist</a></h5>
                     <p class="card-text">The Booklist app was made with the purpose of creating a book list library which uses CRUD operations that interact with an Azure Database to modify the collection (Security will soon be implemented).</p>
                     <p class="theme_color">Skills used:</p>
-                    <ul>
-                        <li>C#</li>
-                        <li>CSS</li>
-                        <li>DataTables</li>
-                        <li>Databases</li>
-                        <li>JavaScript/Jquery</li>
-                        <li>Azure</li>
-                        <li>Use of multiple Externl CDN's</li>
-                    </ul>
+                        <p class="card-text">C#, DataTables, Databases, JavaScript, jQuery,Azure...</p>
                 </div>
             </div>
         </div>
@@ -300,34 +294,39 @@
 <section id="contact">
     <div class="bg-1 shadow-sm container-fluid text-white justify-content-center">
         <h2><span class="fas fa-paper-plane fa-fw theme_color"></span> Get In Touch</h2>
-        <form action="">
+        <form asp-action="SendMail" asp-controller="Home" method="post" onsubmit="save()" id="formsubmit">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input required type="text" asp-for="Name" class="form-control" placeholder="Name">
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input required type="text" asp-for="Email" class="form-control" placeholder="Email">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input required type="text" asp-for="Phone" class="form-control" placeholder="Phone" />
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Phone">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea required asp-for="Message" class="form-control" placeholder="Enter Message"></textarea>
+                                    <span asp-validation-for="Message" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-md bg-theme sweetsubmit" value="Send Message">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" class="btn btn-primary btn-md bg-theme" value="Send Message">
-                            </div>
                         </div>
-
-                    </div>
-                </div>
-
             </div>
         </form>
     </div>
 </section>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

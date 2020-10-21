@@ -15,11 +15,25 @@ namespace KeneilPortfolio
             Configuration = configuration;
         }
 
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            //Mail Kit Service
+            EmailServerConfiguration config = new EmailServerConfiguration();
+            EmailAddress FromEmailAddress = new EmailAddress();
+
+            FromEmailAddress = Configuration.GetSection("Email").Get<EmailAddress>();
+            config = Configuration.GetSection("Smtp").Get<EmailServerConfiguration>();
+            services.AddSingleton<EmailServerConfiguration>(config);
+            services.AddTransient<IEmailService, MailKitEmailService>();
+            services.AddSingleton<EmailAddress>(FromEmailAddress);
+
+            //Main Services including database connection
+            services.AddMvc();
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeneilDatabase")));
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
